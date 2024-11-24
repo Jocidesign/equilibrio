@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalista - Joci Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="social-icons">
+            <a href="#">FB</a>
+            <a href="#">TW</a>
+            <a href="#">IG</a>
+        </div>
+    </aside>
+    
+    <header class="menu-bar">
+        <nav>
+            <ul>
+                <li><a href="#section-01" class="menu-link active">Home</a></li>
+                <li><a href="#section-02" class="menu-link">About</a></li>
+                <li><a href="#section-03" class="menu-link">Projects</a></li>
+                <li><a href="#section-04" class="menu-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="corner-decoration">
+            <div class="circle"></div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="section-01">
+            <div class="scroll-number">01</div>
+            <div class="content">
+                <div class="line"></div>
+                <div class="columns">
+                    <div class="title">
+                        <h2>Segunda-feira</h2>
+                    </div>
+                    <div class="text">
+                        <p>
+                            <!-- Texto genérico de 300 palavras sobre o dia da semana -->
+                            Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...Segunda-feira, o primeiro dia útil da semana, marca novos começos...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-02">
+            <div class="scroll-number">02</div>
+            <div class="content">
+                <div class="line"></div>
+                <div class="columns">
+                    <div class="title">
+                        <h2>Terça-feira</h2>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...Terça-feira é o segundo dia útil e muitas vezes representa...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-03">
+            <div class="scroll-number">03</div>
+            <div class="content">
+                <div class="line"></div>
+                <div class="columns">
+                    <div class="title">
+                        <h2>Quarta-feira</h2>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Quarta-feira, o meio da semana, carrega um ar de equilíbrio...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-04">
+            <div class="scroll-number">04</div>
+            <div class="content">
+                <div class="line"></div>
+                <div class="columns">
+                    <div class="title">
+                        <h2>Quinta-feira</h2>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Quinta-feira é o limiar do final de semana, trazendo consigo...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© Joci Design</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header (Menu Bar) */
+.menu-bar {
+    position: fixed;
+    top: 0;
+  height:60px;
+    width: 100%;
+  border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+    background: #fff;
+    z-index: 999;
+}
+
+.menu-bar nav ul {
+    display: flex;
+    justify-content: left;
+    padding: 10px 60px;
+    list-style: none;
+}
+
+.menu-bar nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu-bar nav ul li a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.menu-bar nav ul li a.active::after,
+.menu-bar nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #000;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 60px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+  
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+    display: block;
+}
+
+/* Corner Decoration */
+.corner-decoration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid #ccc;
+    border-bottom: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corner-decoration .circle {
+    width: 20px;
+    height: 20px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+/* Main Content */
+main {
+    margin: 60px 0 0 60px;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.scroll-number {
+    position: sticky;
+    top: 100px;
+    font-size: 10rem;
+    color: #000;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+}
+
+.content .line {
+    width: 100%;
+    height: 15px;
+    background: #000;
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns .title {
+    flex: 0 0 25%;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.columns .text {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-bar nav ul { font-size: 3vw;
+        
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    
+    .columns {
+        flex-direction: column;
+    }
+  .scroll-number {
+    position: sticky;
+    top: 100px;
+    font-size: 2rem;
+    color: #000;
+    margin-right: 20px;
+    font-weight: bold;
+}
+  
+}</style>
+<script>// JavaScript to handle smooth scrolling of section numbers
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const scrollNumbers = document.querySelectorAll('.scroll-number');
+
+    sections.forEach((section, index) => {
+        const rect = section.getBoundingClientRect();
+        const scrollNumber = scrollNumbers[index];
+
+        if (rect.top <= 0 && rect.bottom > 0) {
+            scrollNumber.style.color = '#000';
+        } else {
+            scrollNumber.style.color = '#ccc';
+        }
+    });
+});
+document.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault(); // Impede o comportamento padrão de navegação
+
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth' // Rola suavemente
+            });
+        }
+    });
+});
+
+</script>
