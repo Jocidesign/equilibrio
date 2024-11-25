@@ -129,6 +129,7 @@ section {
 
 .content {
     flex: 1;
+  
 }
 
 .content .line {
@@ -136,6 +137,7 @@ section {
     height: 15px;
     background: #000;
     margin-bottom: 20px;
+  margin-top:70px;
 }
 
 .columns {
@@ -184,6 +186,9 @@ footer {
     color: #000;
     margin-right: 20px;
     margin-left: 0;
+   
+    
+    
     font-weight: bold;
 }
   .social-icons a {
@@ -195,4 +200,5 @@ footer {
   background:#0ff;
   font-size:12px;
 }
+  
 }
